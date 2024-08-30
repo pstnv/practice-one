@@ -4,12 +4,6 @@ form {
     gap: 20px;
 }
 
-input {
-    margin-left: 10px;
-    padding: 6px;
-    font-size: 16px;
-}
-
 button {
     padding: 6px;
     cursor: pointer;

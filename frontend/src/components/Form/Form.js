@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Form.css";
+import Input from "../Input/Input";
 const url = "http://localhost:5000/greet";
 
 const Form = ({ sendGreet }) => {
@@ -41,16 +42,9 @@ const Form = ({ sendGreet }) => {
         <div>
             <h2>Get greet to the user</h2>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="input">
+                <Input id="input" value={name} setValue={setName}>
                     Введите имя
-                    <input
-                        type="text"
-                        id="input"
-                        name="name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                    />
-                </label>
+                </Input>
                 <button type="submit">Отправить</button>
             </form>
         </div>
